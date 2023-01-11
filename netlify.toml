@@ -1,5 +1,5 @@
 [build]
-  base = "project/"
+  base = "/"
   publish = “dist/my-store”
   command = “ng build”
 [[redirects]]
