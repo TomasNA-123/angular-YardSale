@@ -1,0 +1,31 @@
+p, h2{
+    margin: 0;
+}
+
+h2{
+  font-weight: bold;
+}
+
+.poduct-data-add{
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  .product-data{
+    width: 100%;
+  }
+  .product-add{
+    margin-left: 10px;
+
+    button{
+      width: 45px;
+      height: 45px;
+      padding: 0;
+      color: #fff;
+      background-color: #acd9b2;
+      border-radius: 25px;
+      border: none;
+    }
+  }
+}

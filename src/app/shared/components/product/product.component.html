@@ -1,0 +1,16 @@
+<a [routerLink]="['/product', product.id]">
+  <app-img *ngIf="product.images.length> 0" [img]="product.images[0]"></app-img>
+</a>
+<div class="poduct-data-add">
+  <div class="product-data">
+    <h2>{{product.price | currency:'MX'}}</h2>
+    <p>{{product.title}}</p>
+    <p *ngIf="product.taxes">{{product.taxes}}</p>
+  </div>
+  <div class="product-add">
+    <button (click)="onAddCart()">
+      <img src="../../../assets/svg/bt_add_to_cart.svg" alt="">
+    </button>
+  </div>
+</div>
+<button (click)="onShowDetail()">Ver Detalle</button>
